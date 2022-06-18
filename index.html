@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Checkout Page</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Checkout</h1>
+    </header>
+    <div class="container">
+      <section class="order-container">
+        <div class="order-items">
+          <div class="order-items-item">
+            <img src="photo1.png" alt="Backpack" />
+            <div class="description">
+              <h2 class="description_title">Vintage Backpack</h2>
+              <div class="price_container">
+                <h3>$54.99</h3>
+                <h4><del>$94.99</del></h4>
+              </div>
+              <div class="count">
+                <button class="less">-</button>
+                <input type="number" value="1" />
+                <button class="more">+</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="order-items-item">
+            <img src="photo2.png" alt="shoes" />
+            <div class="description">
+              <h2 class="description_title">Levi Shoes</h2>
+              <div class="price_container">
+                <h3>$74.99</h3>
+                <h4><del>$124.99</del></h4>
+              </div>
+              <div class="count">
+                <button class="less">-</button>
+                <input class="conter_num" type="number" value="1" />
+                <button class="more">+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="price">
+          <div class="price_shiping">
+            <h2>Shipping</h2>
+            <h3>$19</h3>
+          </div>
+          <div class="price_total">
+            <h2>Total</h2>
+            <h3>$148.98</h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="data">
+        <form class="form_inf" action="" method="post">
+          <h2 class="contact_inf">Contact infomation</h2>
+
+          <div class="form-input-group">
+            <label for="mail" class="form-label">E-mail</label>
+            <i class="fa-solid fa-envelope form-input-icon"></i>
+            <input
+              class="form_input"
+              type="email"
+              id="mail"
+              placeholder="Enter your email..."
+              name="email"
+            />
+          </div>
+
+          <div class="form-input-group">
+            <label for="phone" class="form-label">Phone</label>
+            <i class="fa-solid fa-phone form-input-icon"></i>
+            <input
+              class="form_input"
+              type="tel"
+              id="phone"
+              placeholder="Enter your phone..."
+              name="phone"
+            />
+          </div>
+
+          <h2 class="shipping">Shipping address</h2>
+
+          <div class="form-input-group">
+            <label for="name" class="form-label">Full name</label>
+            <i class="fa-solid fa-circle-user form-input-icon"></i>
+            <input
+              class="form_input dark-name"
+              type="text"
+              id="name"
+              placeholder="Rodney Cotton"
+              name="name"
+            />
+          </div>
+
+          <div class="form-input-group">
+            <label for="address" class="form-label">Address</label>
+            <i class="fa-solid fa-house form-input-icon"></i>
+            <input
+              class="form_input"
+              type="text"
+              id="address"
+              placeholder="Your address.."
+              name="adress"
+            />
+          </div>
+
+          <div class="form-input-group">
+            <label for="city" class="form-label">City</label>
+            <i class="fa-solid fa-city form-input-icon"></i>
+            <input
+              class="form_input"
+              type="text"
+              id="city"
+              placeholder="Your city.."
+              name="city"
+            />
+          </div>
+
+          <div class="form-country-code">
+            <div class="form-container">
+              <div class="form-input-group">
+                <label for="country" class="form-label">Country</label>
+                <i class="fa-solid fa-city form-input-icon"></i>
+                <select name="country" id="country">
+                  <option value="">India</option>
+                  <option value="peru">China</option>
+                  <option value="venezuela">America</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-container">
+              <div class="form-input-group">
+                <label for="code" class="form-label">Postal code</label>
+                <i class="fa-solid fa-city form-input-icon"></i>
+                <input
+                  class="form_input"
+                  type="text"
+                  id="code"
+                  placeholder="Your postal code.."
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="advice">
+            <label for="checkbox">Save this information for next time</label>
+            <input type="checkbox" id="checkbox" />
+          </div>
+          <div class="form-button">
+            <button class="button">Continue</button>
+          </div>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>
